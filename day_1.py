@@ -5,6 +5,7 @@ def question1():
             print(i, end=', ')
     print('\b')
 
+
 # question 2
 def question2():
     num = int(input('here: '))
@@ -13,6 +14,7 @@ def question2():
         output = output * x
 
     print(output)
+
 
 # question 3
 def question3():
