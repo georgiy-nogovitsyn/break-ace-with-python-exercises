@@ -16,4 +16,4 @@ def question14():
 def question15():
     a = input('Input an integer: ')
     print(int(a) + int(a*2) + int(a*3) + int(a*4))
-question15()
+#question15()
