@@ -41,4 +41,4 @@ def question13():
         elif ch.isdigit():
             digit += 1
     print(f'LETTERS {letters}\nDIGITS {digit}')
-#question13()
+# question13()

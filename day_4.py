@@ -9,11 +9,11 @@ def question14():
             else:
                 lower += 1
     print(f'UPPER CASE {upper}\nLOWER CASE {lower}')
-#question14()
+# question14()
 
 
 # question 15
 def question15():
     a = input('Input an integer: ')
     print(int(a) + int(a*2) + int(a*3) + int(a*4))
-#question15()
+# question15()

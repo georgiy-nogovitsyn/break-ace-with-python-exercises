@@ -4,7 +4,7 @@ def question1():
         if i % 7 == 0 and i % 5 != 0:
             print(i, end=', ')
     print('\b')
-
+# question1()
 
 # question 2
 def question2():
@@ -14,6 +14,7 @@ def question2():
         output = output * x
 
     print(output)
+# question2()
 
 
 # question 3
@@ -22,5 +23,5 @@ def question3():
     output_dict = dict()
     for i in (range(1, integral + 1)):
         output_dict[i] = i * i
-
     print(output_dict)
+# question3()
