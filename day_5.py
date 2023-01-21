@@ -17,4 +17,4 @@ def question17():
         elif amount[0] == 'W':
             total -= int(amount[1])
     print(total)
-# question17()
+question17()
