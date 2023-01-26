@@ -15,6 +15,7 @@ def question23(a):
 # question 24
 print(f'{abs.__doc__}\n\n\n{int.__doc__}\n\n\n{input.__doc__}')
 
+
 def question24(a):
     '''
     Draw a square by side size 'a'.
