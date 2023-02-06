@@ -29,10 +29,24 @@ def binary_search(arr, num):
             last = middle - 1
     return -1
 
-arr = [9, 2, 3, 4, 5, 8, 0, 1]
-print(binary_search(sorted(arr), 2))
+# arr = [9, 2, 3, 4, 5, 8, 0, 1]
+# print(binary_search(sorted(arr), 2))
 
 
+def req_binary_search(arr, num, first, last):
+    middle = first + (last - first) // 2
+    if arr[middle] == num:
+        return middle
+    elif arr[middle] < num:
+        first = middle + 1
+        return req_binary_search(arr, num, first, last)
+    elif arr[middle] > num:
+        last = middle - 1
+        return req_binary_search(arr, num, first, last)
+    else:
+        return -1
+arr = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(req_binary_search(arr, 9, 0, len(arr)))
 # question 68
 def question68():
     print(random.random() * 100)
