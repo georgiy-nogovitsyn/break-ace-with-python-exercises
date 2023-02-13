@@ -25,6 +25,32 @@ def question87():
 # question 88
 def question88():
     li = [12, 24, 35, 24, 88, 120, 155, 88, 120, 155]
+    for x in li:
+        if li.count(x) > 1:
+            li.remove(x)
+    print(li)
 
 
 # question 89
+class Person:
+    def __init__(self):
+        self.gender = 'Unknown'
+
+    def get_gender(self):
+        print(self.gender)
+
+
+class Male(Person):
+    def __init__(self):
+        self.gender = 'Male'
+
+
+class Female(Person):
+    def __init__(self):
+        self.gender = 'Female'
+
+
+marry = Female()
+john = Male()
+marry.get_gender()
+john.get_gender()
