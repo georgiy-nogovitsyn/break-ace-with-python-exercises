@@ -36,4 +36,5 @@ def question94():
     for x in range(1, 36):
         if x * 2 + (35-x) * 4 == 94:
             print(f'chickens: {x}, rabbits: {35-x}')
+            break
 # question94()
