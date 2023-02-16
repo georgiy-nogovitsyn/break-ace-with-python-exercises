@@ -19,11 +19,25 @@ def question96():
 # question 97
 def question97():
     pass
+    import string
+
+    size = int(input('Input: '))
+    letters = list(string.ascii_lowercase[0:size])
+    st = '-'.join(letters[::-1])
+    li = [st]
+    for x in range(size-1):
+        s = '--' + li[0][0:-2]
+        li.insert(0, s)
+        li.append(s)
+    for y in li:
+        print(y + y[-2::-1])
+# question97()
 
 
 # question 98
 def question98():
     import calendar
+
     s = input('Input: ').split(' ')
     date = []
     for x in s:
@@ -37,4 +51,8 @@ def question98():
 
 # question 99
 def question99():
-    pass
+    set1 = {2, 4, 5, 9}
+    set2 = {2, 4, 11, 12}
+    for x in sorted(set1 ^ set2):
+        print(x)
+# question99()
